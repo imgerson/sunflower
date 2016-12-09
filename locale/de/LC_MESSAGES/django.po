@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-08 22:29-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: girasol/templates/girasol/base.html:56
+#: girasol/templates/girasol/post_detail.html:7
+msgid "Finca Agroecológica El Girasol"
+msgstr "Finca El Girasol"
+
+#: girasol/templates/girasol/base.html:82
+msgid "Contacto"
+msgstr "Kontakt"
+
+#: girasol/templates/girasol/base.html:107
+msgid "Dirección"
+msgstr "Adresse"
+
+#: girasol/templates/girasol/base.html:107
+msgid "PICUS, 850mts al oeste. San Marcos, Carazo."
+msgstr "PICUS, 850 m Richtung Westen. San Marcos, Carazo"
+
+#: girasol/templates/girasol/concept.html:19
+#: girasol/templates/girasol/post_detail.html:21
+#: girasol/templates/girasol/post_list.html:19
+msgid "Te invitamos a ver nuestra página de"
+msgstr "Sehen Sie unsere Seite über"
+
+#: girasol/templates/girasol/emails.html:3
+msgid "Correos Electrónicos"
+msgstr "E-Mails"
+
+#: girasol/templates/girasol/menu.html:7
+msgid "Inicio"
+msgstr "Einleitung"
+
+#: girasol/templates/girasol/phones.html:3
+#, fuzzy
+#| msgid "Teléfono"
+msgid "Teléfonos"
+msgstr "Telefone"
+
+#~ msgid "Finca El Girasol"
+#~ msgstr "Finca El Girasol"

@@ -1,0 +1,21 @@
+{% if gallery %}
+
+  <div class="bg-white">
+
+    <div id="slidy-container">
+
+      <figure id="slidy">
+
+        {% for photo in gallery.photos.all %}
+
+          <img src="{{ photo.image.url }}" alt="Casa" data-caption="{{ photo.title }}">
+
+        {% endfor %}
+
+      </figure>
+
+    </div>
+
+  </div>
+
+{% endif %}

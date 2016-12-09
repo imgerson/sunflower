@@ -1,0 +1,11 @@
+{% load i18n %}
+
+<p>{% trans "Teléfonos" %}:<br />
+
+  {% for phone in phones %}
+
+    {{ phone.contact }}<br />
+
+  {% endfor %}
+
+</p>

@@ -1,0 +1,95 @@
+{% extends "girasol/base.html" %}
+
+{% load i18n %}
+
+{% block title %}{{ concept.title }}{% endblock %}
+
+{% block description %}{{ concept.description }}{% endblock %}
+
+{% block maincontent %}
+
+  <div class="bg-white padding-and-margin">
+
+    <h4>{{ concept.title }}</h4>
+
+    <p>{{ concept.content|linebreaks }}</p>
+
+    {% if concept.links %}
+
+      {% trans "Te invitamos a ver nuestra página de" %}:
+
+      {% for link in concept.links.all %}
+
+        <a class="button" href="{% url 'post-view' link.slug %}">{{ link.title }}</a>
+
+      {% endfor %}
+
+    {% endif %}
+
+  </div>
+
+  {% if concept.gallery %}
+
+    {% if concept.gallery.slider %}
+
+      <div class="bg-white">
+
+        <div id="slidy-container">
+
+          <figure id="slidy">
+
+            {% for photo in concept.gallery.photos.all %}
+
+              <img src="{{ photo.image.url }}" alt="Casa" data-caption="{{ photo.title }}" class="u-max-full-width">
+
+            {% endfor %}
+
+          </figure>
+
+        </div>
+
+      </div>
+
+    {% else %}
+
+      <div class="bg-white padding-and-margin">
+
+        <h4 class="center">{{ concept.gallery.title }}</h4>
+
+        <p class="center">{{ concept.gallery.description }}</p>
+
+        <div class="gallery">
+
+          {% for photo in concept.gallery.photos.all %}
+
+            <div class="gallery-child">
+
+              <a href="{{ photo.image.url }}" class="fresco"><img src="{{ photo.image.url }}"></a>
+
+              <span>{{ photo.title }}</span>
+
+            </div>
+
+          {% endfor %}
+
+        </div>
+
+      </div>
+
+    {% endif %}
+
+  {% endif %}
+
+  {% if concept.quote %}
+
+    <div class="bg-white padding-and-margin">
+
+      <blockquote>{{ concept.quote.quote }}</blockquote>
+
+      <div class="right"><span class="author">― {{ concept.quote.author }}</span></div>
+
+    </div>
+
+  {% endif %}
+
+{% endblock %}

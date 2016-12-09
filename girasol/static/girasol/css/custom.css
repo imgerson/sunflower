@@ -1,0 +1,198 @@
+html {
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/girasol/images/sunflower.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 62.5%;}
+h1, h2{
+  /* color:white; */ /* COMMENTED THIS LINE */
+  color:orange;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 0;}
+h4{
+  font-size: 2.7rem;
+  font-weight: bold;}
+
+/* START icons section */
+/* .icon -> Only for small icons such the sunflower in the title */
+.icon{
+  width: 25px;
+  height: 25px;
+  background-size: cover;}
+/* .bigger-icon for social media icons like Facebook, Instagram... etc */
+.bigger-icon{
+  width: 50px;
+  height: 50px;
+  background-size: cover;}
+/* the icons path */
+.sunflower{
+  background: url(/static/girasol/images/sunflower.png);
+  background-size: cover;}
+.email{
+  background: url(/static/girasol/icons/svg/email.svg);}
+.facebook{
+  background: url(/static/girasol/icons/svg/facebook.svg);}
+.instagram{
+  background: url(/static/girasol/icons/svg/instagram.svg);}
+/* END icons section */
+
+/* .container */
+.container{
+  margin-top: 2em}
+
+/* .content */
+.content{
+  padding: 0;}
+
+/* .menu */
+.menu{
+  background-color: #ecf0f1; }
+.menu ul{
+  margin-left: 1em;}
+.menu li {
+  color: white;
+  font-size: 1.2em;
+  margin: 1em 0;
+  margin-right: 1em;
+  list-style: none;
+  display: inline-block;}
+.menu li a{
+  color:#004415;
+  text-decoration: none;
+  font-weight: bold;}
+.menu li a:hover{
+  text-decoration: underline;}
+.menu h1{
+  color: #e67e22;
+  font-weight: bolder;
+  font-size: 1.5em;}
+  /*margin: 0.6em 0;}/*
+
+/* .bg-white and .padding-and-margin: HELPERS */
+.bg-white{
+  color: #6B7A8F;
+  background-color: white;
+  font-size: 1em;
+  font-weight: bold;}
+.padding-and-margin{
+  padding: 1em 1em;
+  margin: 1em 0;}
+
+/* Style for galleries */
+.gallery{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;}
+.gallery-child {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4em;
+  max-width: 100%;
+  max-height: 200px;
+  display: inline-block;}
+.gallery-child img{
+  width: 100%;
+  max-height: 200px;}
+
+/* .nav */
+.nav{
+  margin-bottom: 1em;
+  background-color: white;}
+
+.lang{
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  width: 30%;
+  margin: 0.6em 0;}
+.lang a, .lang a:hover{
+  text-decoration: none;
+  color: #004415;}
+
+/* .subcategory */
+.subcategory{
+  color: #004415;
+  padding: 10px;
+  margin: 0;}
+.subcategory a, .subcategory a:hover{
+  text-decoration: none;
+  color: #004415;}
+.subcategory h3{
+  font-weight: bold;
+  font-size:1.5em;}
+.subcategory-content{
+  height: 120px;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 15px;}
+
+/* .footer */
+.footer{
+  color: #6B7A8F;
+  background-color: white;
+  font-size: 1.0em;
+  font-weight: bold;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;}
+.footer li{
+  list-style: none;}
+.footer a{
+  text-decoration: none;
+  color: #004415;
+  font-weight: bold;}
+.contact-info{
+  color: #d35400;
+  font-weight: bold;}
+
+/* Styles for blockquote element */
+blockquote {
+  font-size: 1.5em;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 1.0em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;}
+blockquote p {
+  display: inline;}
+.author{
+  font-size: 1.5em;
+  display:inline-block;}
+.thanks-to, .thanks-to a{
+  color: white;
+  margin-bottom: 1em;}
+
+/* Helpers */
+.inline{
+  display:inline-block;}
+.right{
+  text-align: right;}
+.center{
+  text-align: center;}
+
+/* Media queries: Keep to a minimun if possible */
+@media (min-width: 550px) {
+  .hide-in-big{display: none !important;}
+  .gallery-child{ width: 44% ;}}
+@media (max-width: 550px) {
+  h1, h2{ font-size: 2.2em; text-align: center;}
+  .hide-in-small{display: none !important;}
+  .nav{margin-top: 1em;}}
+@media (min-width: 1200px) {
+  .hide-nav-in-big{display: none !important;}}
+@media (max-width: 1200px) {
+  .hide-nav-in-small{display: none !important;}}
+
+/* Styles for other libraries */
+/* Stye for slider */
+#slidy-container {
+  width: 100%; margin: 0 auto; overflow: hidden;}

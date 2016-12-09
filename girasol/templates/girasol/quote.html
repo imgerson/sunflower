@@ -1,0 +1,7 @@
+{% for quote in quotes %}
+
+  <blockquote>{{ quote.content }}</blockquote>
+
+  <div class="right"><span class="author">― {{ quote.author }}</span></div>
+
+{% endfor %}

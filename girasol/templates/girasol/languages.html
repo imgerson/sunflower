@@ -1,0 +1,9 @@
+{% load i18n %}
+
+{% get_available_languages as languages %}
+
+{% for lang_code, lang_name in languages %}
+    {% language lang_code %}
+    <div class="inline lang"><a href="{% url 'index' %}">{{ lang_name }}</a></div>
+    {% endlanguage %}
+{% endfor %}

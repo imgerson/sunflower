@@ -1,0 +1,11 @@
+{% load i18n %}
+
+<p>{% trans "Correos Electrónicos" %}:<br />
+
+  {% for email in emails %}
+
+    {{ email.contact }}<br />
+
+  {% endfor %}
+
+</p>

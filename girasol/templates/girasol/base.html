@@ -1,0 +1,128 @@
+{% load girasol_extras %}
+
+{% load staticfiles %}
+
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <!-- Basic Page Needs -->
+
+  <meta charset="utf-8">
+  <title>{% block title %}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{% endblock %}">
+
+  <!-- Mobile Specific Metas  -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT  -->
+
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="/static/girasol/css/normalize.css">
+  <link rel="stylesheet" href="/static/girasol/css/skeleton.css">
+  <link rel="stylesheet" href="/static/girasol/css/custom.css">
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="/static/girasol/images/sunflower.png">
+
+  <!-- JavaScript -->
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="/static/girasol/js/fresco/fresco.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/girasol/css/fresco/fresco.css"/>
+
+</head>
+<body>
+
+<!-- Home Page Layout -->
+
+<div class="container">
+
+  <!-- Starting the row that will contain all content on website  -->
+  <div class="row">
+
+    <!-- Left wide column for the main content -->
+    <div class="eight columns">
+      <div class="content">
+
+        <!-- Main Menu for navigation (TOP) -->
+        <h1>{% trans "Finca Agroecológica El Girasol" %} <div class="icon sunflower inline"></div></h1>
+        {% block mainmenu %}{% show_main_menu %}{% endblock %}
+
+
+        <div class="nav hide-in-big">
+          {% include 'girasol/languages.html' %}
+        </div>
+
+        <!-- Dynamic content of the website -->
+        {% block maincontent %}{% endblock %}
+
+      <!-- </div> closing the "content" div. -->
+      </div>
+    </div>
+
+    <!-- Start Right Navigation column -->
+    <div class="four columns">
+      <div class="nav">
+        {% include 'girasol/languages.html' %}
+      </div>
+
+      <div class="nav">
+
+        {% block navigation %}{% show_navigation %}{% endblock %}
+
+        <div class="subcategory">
+          <h3>{% trans "Contacto" %}</h3>
+          <div class="inline"><a href="mailto:carmenza59@web.de"><div class="bigger-icon email"></div></a></div>
+          <div class="inline"><a><div class="bigger-icon facebook"></div></a></div>
+          <div class="inline"><a><div class="bigger-icon instagram"></div></a></div>
+        </div>
+      </div>
+    </div>
+    <!-- End right navigation column -->
+
+  <!-- </div> closing the "Row" element -->
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="row">
+      <div class="three columns">
+        {% block footer %}{% show_footer %}{% endblock %}
+      </div>
+      <div class="three columns">
+        {% block footer_sec %}{% show_footer_sec %}{% endblock %}
+      </div>
+
+      <!-- Contact Information -->
+      <div class="three columns">
+        <div class="contact-info">
+          <p>{% trans "Dirección" %}: {% trans "PICUS, 850mts al oeste. San Marcos, Carazo." %}</p>
+          {% block phones %}{% show_phone_numbers %}{% endblock %}
+          {% block emails %}{% show_email_addresses %}{% endblock %}
+        </div>
+      </div>
+      <div class="three columns">
+        <img src="/static/girasol/images/logo_sanmarcos.gif" class="u-max-full-width" />
+      </div>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+  <div class="thanks-to center">Designed &amp; Programmed by <a href="http://imgglasses.com/">Gerson Ruiz</a></div>
+
+</div>
+
+<!-- Javascript for slider -->
+<script type="text/javascript" src="/static/girasol/js/slider.js"></script>
+
+<!-- End Document -->
+</body>
+</html>

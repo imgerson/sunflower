@@ -1,0 +1,82 @@
+{% extends "girasol/base.html" %}
+
+{% load girasol_extras %}
+
+{% load i18n %}
+
+{% block title %}{{ post.title }} - {% trans "Finca Agroecológica El Girasol" %}{% endblock %}
+
+{% block description %}{{ post.description }}{% endblock %}
+
+{% block maincontent %}
+
+  <div class="bg-white padding-and-margin">
+
+    <h4>{{ post.title }}</h4>
+
+    {{ post.content|linebreaks }}
+
+    {% if post.links %}
+
+      {% trans "Te invitamos a ver nuestra página de" %}:
+
+      {% for link in post.links.all %}
+
+        <a class="button" href="{% url 'post-view' link.slug %}">{{ link.title }}</a>
+
+      {% endfor %}
+
+    {% endif %}
+
+  </div>
+
+  {% if galleries %}
+
+    <div class="bg-white padding-and-margin">
+
+      {% for gallery in galleries %}
+
+        {% if gallery.photos %}
+
+          <div class="gallery">
+
+            <h4>{{ gallery.title }}</h4>
+
+            <p>{{ gallery.description }}</p>
+
+            {% for photo in gallery.photos.all %}
+
+              <div class="gallery-child">
+
+                <a href="{{ photo.image.url }}" class="fresco"><img src="{{ photo.image.url }}" alt=""></a>
+
+                <span>{{ photo.title }}</span>
+
+              </div>
+
+            {% endfor %}
+
+          </div>
+
+        {% endif %}
+
+      {% endfor %}
+
+    </div>
+
+    {% if post.quote %}
+
+      <div class="bg-white padding-and-margin">
+
+        <blockquote>{{ post.quote.quote }}</blockquote>
+
+        <div class="right"><span class="author">― {{ post.quote.author }}</span></div>
+
+      </div>
+
+    {% endif %}
+
+  {% endif %}
+
+
+{% endblock %}

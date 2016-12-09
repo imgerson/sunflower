@@ -1,0 +1,25 @@
+{% load static %}
+
+{% load staticfiles %}
+
+{% load thumbnail %}
+
+{% for link in links %}
+
+<div class="subcategory">
+
+  <h3><a href="{% url 'post-view' link.slug %}">{{ link.title }}</a></h3>
+
+    <a href="{% url 'post-view' link.slug %}">
+
+      {% thumbnail link.image "320x240" crop="center" as im %}
+
+        <div class="subcategory-content" style="background:url({{ im.url }}) no-repeat;"></div>
+
+      {% endthumbnail %}
+
+    </a>
+
+</div>
+
+{% endfor %}

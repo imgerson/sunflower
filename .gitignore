@@ -1,0 +1,7 @@
+*.pyc
+*.swp
+fabfile.py
+settings.py
+db.sqlite3
+manage.py
+sunflower/

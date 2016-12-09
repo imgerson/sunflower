@@ -1,0 +1,9 @@
+<ul>
+
+  {% for link in links %}
+
+    <li><a href="{% url 'post-view' link.slug %}">{{ link.title }}</a></li>
+
+  {% endfor %}
+
+</ul>
