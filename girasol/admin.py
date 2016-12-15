@@ -20,8 +20,8 @@ class ConceptAdmin(TranslatableAdmin):
     fieldsets = (
         (None, {
             'fields': (
-                'title', 'description', 'content', 'author', 'links',
-                'gallery', 'quote'),
+                'title', 'description', 'content', 'author', 'gallery',
+                'quote'),
         }),
     )
 
@@ -32,8 +32,8 @@ class PostAdmin(TranslatableAdmin):
         (None, {
             'fields': (
                 'title', 'description', 'content', 'author', 'image',
-                'galleries', 'links', 'quote', 'menu', 'navigation',
-                'footer', 'priority'),
+                'galleries', 'quote', 'menu', 'navigation', 'footer',
+                'priority'),
         }),
     )
 

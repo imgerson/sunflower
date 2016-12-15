@@ -86,7 +86,6 @@ class Post(TranslatableModel):
     author = models.CharField("Autor", max_length=200, default="")
     image = ImageField("Imagen", upload_to='imagenes/')
     date = models.DateTimeField(auto_now=True, blank=True)
-    links = models.ManyToManyField("self", blank=True)
     priority = models.PositiveIntegerField("Prioridad", blank=True, default=5)
     slug = models.SlugField(blank=True)
     quote = models.ForeignKey(Quote, null=True, blank=True)
@@ -119,7 +118,6 @@ class Concept(TranslatableModel):
     )
     author = models.CharField("Autor", max_length=200)
     date = models.DateTimeField(auto_now=True, blank=True)
-    links = models.ManyToManyField(Post, blank=True)
     gallery = models.ForeignKey(Gallery, null=True, blank=True)
     quote = models.ForeignKey(Quote, null=True, blank=True)
 

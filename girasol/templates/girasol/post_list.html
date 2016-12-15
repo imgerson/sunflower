@@ -12,19 +12,7 @@
 
     <h4>{{ concept.title }}</h4>
 
-    <p>{{ concept.content|linebreaks }}</p>
-
-    {% if concept.links %}
-
-      {% trans "Te invitamos a ver nuestra página de" %}:
-
-      {% for link in concept.links.all %}
-
-        <a class="button" href="{% url 'post-view' link.slug %}">{{ link.title }}</a>
-
-      {% endfor %}
-
-    {% endif %}
+    {{ concept.content|linebreaks }}
 
   </div>
 
