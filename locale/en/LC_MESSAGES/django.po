@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-16 00:32+0000\n"
+"POT-Creation-Date: 2016-12-16 01:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,8 +35,10 @@ msgid "PICUS, 850mts al oeste. San Marcos, Carazo."
 msgstr "PICUS, 850mts to the East. San Marcos, Carazo."
 
 #: girasol/templates/girasol/base.html:114
-msgid "Diseñado &amp; Programado por"
-msgstr "Designed &amp; Programmed by"
+#, fuzzy
+#| msgid "Diseñado &amp; Programado por"
+msgid "Diseñado y programado por"
+msgstr "Designed and programmed by"
 
 #: girasol/templates/girasol/emails.html:3
 msgid "Correos Electrónicos"
