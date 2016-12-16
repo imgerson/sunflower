@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-15 20:37+0000\n"
+"POT-Creation-Date: 2016-12-16 00:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: girasol/templates/girasol/base.html:53
 #: girasol/templates/girasol/post_detail.html:7
 msgid "Finca Agroecológica El Girasol"
-msgstr ""
+msgstr "Finca Agroecológica El Girasol"
 
 #: girasol/templates/girasol/base.html:79
 msgid "Contacto"
@@ -37,7 +37,7 @@ msgstr "PICUS, 850mts al oeste. San Marcos, Carazo."
 
 #: girasol/templates/girasol/base.html:114
 msgid "Diseñado &amp; Programado por"
-msgstr ""
+msgstr "Diseñado &amp; Programado por"
 
 #: girasol/templates/girasol/emails.html:3
 msgid "Correos Electrónicos"
@@ -48,14 +48,11 @@ msgid "Inicio"
 msgstr "Inicio"
 
 #: girasol/templates/girasol/phones.html:3
-#, fuzzy
-#| msgid "Teléfono"
 msgid "Teléfonos"
 msgstr "Teléfono"
 
-#: girasol/templates/girasol/post_detail.html:21
-msgid "Te invitamos a ver nuestra página de"
-msgstr ""
+#~ msgid "Te invitamos a ver nuestra página de"
+#~ msgstr "Te invitamos a ver nuestra página de"
 
 #~ msgid "Post"
 #~ msgstr "Post"

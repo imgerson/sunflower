@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-15 20:37+0000\n"
+"POT-Creation-Date: 2016-12-16 00:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,14 +48,11 @@ msgid "Inicio"
 msgstr "Einleitung"
 
 #: girasol/templates/girasol/phones.html:3
-#, fuzzy
-#| msgid "Teléfono"
 msgid "Teléfonos"
 msgstr "Telefon"
 
-#: girasol/templates/girasol/post_detail.html:21
-msgid "Te invitamos a ver nuestra página de"
-msgstr "Sehen Sie unsere Seite über"
+#~ msgid "Te invitamos a ver nuestra página de"
+#~ msgstr "Sehen Sie unsere Seite über"
 
 #~ msgid "Finca El Girasol"
 #~ msgstr "Finca El Girasol"
