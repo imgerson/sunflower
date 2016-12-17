@@ -36,7 +36,6 @@ msgid "PICUS, 850mts al oeste. San Marcos, Carazo."
 msgstr "PICUS, 850 m Richtung Westen. San Marcos, Carazo"
 
 #: girasol/templates/girasol/base.html:114
-#, fuzzy
 #| msgid "Diseñado &amp; Programado por"
 msgid "Diseñado y programado por"
 msgstr "Entworfen und Programmiert von"
