@@ -25,7 +25,7 @@ class Photo(TranslatableModel):
         return '{}'.format(self.title)
 
     class Meta:
-        ordering = ['-date']
+        ordering = ['pk']
         verbose_name = "Imagen"
         verbose_name_plural = "Imágenes"
 

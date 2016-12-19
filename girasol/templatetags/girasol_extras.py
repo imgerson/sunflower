@@ -19,7 +19,7 @@ def show_main_menu():
 def show_navigation():
     LANG = get_language()
 
-    links = Post.objects.language(LANG).filter(navigation=True)
+    links = Post.objects.language(LANG).filter(navigation=True).order_by('priority')
 
     return {'links': links}
 
