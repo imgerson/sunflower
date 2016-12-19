@@ -40,7 +40,7 @@
 
                 {% thumbnail photo.image "320x240" crop="center" as im %}
 
-                  <a href="{{ photo.image.url }}" class="fresco" data-fresco-group="{{ gallery.id }}"><img src="{{ photo.image.url }}" alt="{{ photo.title }}"></a>
+                  <a href="{{ photo.image.url }}" class="fresco" data-fresco-group="{{ gallery.id }}"><img src="{{ im.url }}" alt="{{ photo.title }}"></a>
 
                 {% endthumbnail %}
 
