@@ -16,7 +16,7 @@ class Photo(TranslatableModel):
     )
     width = models.PositiveIntegerField()
     height = models.PositiveIntegerField()
-    date = models.DateTimeField(auto_now=True, blank=True, null=True)
+    date = models.DateTimeField(auto_now_add=True, blank=True, null=True)
     image = models.ImageField(
         "Imagen", upload_to='imagenes/galerias', height_field='height',
         width_field='width')
@@ -25,7 +25,7 @@ class Photo(TranslatableModel):
         return '{}'.format(self.title)
 
     class Meta:
-        ordering = ['pk']
+        ordering = ['date']
         verbose_name = "Imagen"
         verbose_name_plural = "Imágenes"
 

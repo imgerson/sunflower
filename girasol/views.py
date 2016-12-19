@@ -33,5 +33,6 @@ class PostView(DetailView):
         context = super(PostView, self).get_context_data(**kwargs)
         context['post'] = self.object
         context['galleries'] = self.object.galleries.prefetch_related('photos')
+        context['galleries'] = context['galleries'].order_by('date')
 
         return context
