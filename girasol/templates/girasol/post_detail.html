@@ -34,7 +34,7 @@
 
             <p>{{ gallery.description }}</p>
 
-            {% for photo in gallery.photos.all %}
+            {% for photo in gallery.photos.all|sort_by:'date' %}
 
               <div class="gallery-child">
 

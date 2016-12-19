@@ -61,3 +61,7 @@ def show_slider():
     gallery = gallery.prefetch_related('photos').order_by('-date')[0]
 
     return {'gallery': gallery}
+
+@register.filter
+def sort_by(queryset, order):
+    return queryset.order_by(order)
