@@ -2,6 +2,8 @@
 
 {% load girasol_extras %}
 
+{% load thumbnail %}
+
 {% load i18n %}
 
 {% block title %}{{ post.title }} - {% trans "Finca Agroecológica El Girasol" %}{% endblock %}
@@ -36,7 +38,11 @@
 
               <div class="gallery-child">
 
-                <a href="{{ photo.image.url }}" class="fresco"><img src="{{ photo.image.url }}" alt=""></a>
+                {% thumbnail photo.image "320x240" crop="center" as im %}
+
+                  <a href="{{ photo.image.url }}" class="fresco" data-fresco-group="{{ gallery.id }}"><img src="{{ im.url }}" alt="{{ photo.title }}"></a>
+
+                {% endthumbnail %}
 
                 <span>{{ photo.title }}</span>
 
